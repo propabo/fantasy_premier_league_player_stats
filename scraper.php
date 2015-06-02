@@ -38,7 +38,8 @@ foreach($obj->fixture_history->all as $rows)
 
 //create results table
 $results = array(
-    'index' => strval($player.$rows[1]),
+    'player_id' => strval($player),
+    'player_gw_index' => strval($player.$rows[1]),
     'first_name' => strval($obj->first_name),
     'last_name' => strval($obj->web_name),
     'position' => strval($obj->type_name),
@@ -69,7 +70,7 @@ $results = array(
 #print_r($results);
 
 //save
-scraperwiki::save(array('index'),$results);
+scraperwiki::save(array('player_gw_index'),$results);
 }
 
 }
