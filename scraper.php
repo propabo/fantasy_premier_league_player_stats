@@ -38,7 +38,7 @@ foreach($obj->fixture_history->all as $rows)
 
 //create results table
 $results = array(
-    'player_id' => strval($player),
+    #'player_id' => strval($player),
     'player_gw_index' => strval($player.$rows[1]),
     'first_name' => strval($obj->first_name),
     'last_name' => strval($obj->web_name),
