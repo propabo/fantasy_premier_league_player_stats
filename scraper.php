@@ -9,7 +9,7 @@ $url = 'http://fantasy.premierleague.com/web/api/elements/';
 #$lastplayer=
 
 //set range of players to look through - currently there are 675
-$players=range(1,800);
+$players=range(1,521);
 #$players=range(1,$lastplayer);
 
 //need to add specific numbers such as Jan transfers to array
